@@ -4,15 +4,12 @@
 
 int main(void){
     int i;
-    int score[SIZE];
-    int grade[SIZE];
-
+    int a[SIZE]={1,2,3,4,5};
+    int b[SIZE]={1,2,4,4,5};
+    int flag_same=1;
     for(i=0;i<SIZE;i++){
-        grade[i]=rand()%100;
-        score[i]=grade[i];
-    }
-    for(i=0;i<SIZE;i++){
-        printf("score[%d]=%d\n",i,score[i]);
+        if (a[i]!=b[i])
+            printf("index %d is different", i);
     }
     return 0;
 }
